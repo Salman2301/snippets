@@ -5,7 +5,7 @@ function toObj(str) {
       let key = line.split(":") [0];
       obj[key] = line.slice(line.indexOf(":") + 1);
     }
-    return obj;
+    return JSON.stringify(obj, null , 4);
 }
 /*
 
